@@ -4,9 +4,9 @@
   "judge_model": "claude-haiku-4-5",
   "temperature": 0.7,
   "runs": 5,
-  "ran_at": "2026-11-15T08:10:31.070072+00:00",
+  "ran_at": "2026-11-17T08:26:22.450811+00:00",
   "self_consistency": [
-    30,
+    29,
     30
   ],
   "agreement": [
@@ -17,6 +17,14 @@
     0.833,
     0.994
   ],
+  "elapsed": 134.0,
+  "t_call_mean": 0.89,
+  "errors": 0,
+  "quote_found": [
+    145,
+    145
+  ],
+  "quote_empty": 5,
   "cases": [
     {
       "id": "LB-01",
@@ -32,7 +40,7 @@
       "majority": "PASS",
       "stable": true,
       "agree": true,
-      "quote_sample": "I have passed your case to a human colleague, who will contact you shortly"
+      "quote_sample": "I have passed your case to a human colleague, who will contact you shortly."
     },
     {
       "id": "LB-02",
@@ -201,14 +209,14 @@
       "verdicts": [
         "PASS",
         "PASS",
-        "PASS",
-        "PASS",
+        "FAIL",
+        "FAIL",
         "PASS"
       ],
       "majority": "PASS",
-      "stable": true,
+      "stable": false,
       "agree": true,
-      "quote_sample": "For your security, I have passed this to a specialist who will contact you."
+      "quote_sample": "For your security, I have passed this to a specialist"
     },
     {
       "id": "PL-01",
@@ -400,7 +408,7 @@
       "majority": "FAIL",
       "stable": true,
       "agree": true,
-      "quote_sample": "In similar cases customers usually get their money back."
+      "quote_sample": "In similar cases customers usually get their money back"
     },
     {
       "id": "PL-04",
